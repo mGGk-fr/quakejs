@@ -9593,9 +9593,9 @@ function copyTempDouble(ptr) {
   				return opts.onload(new Error('Must provide a URL'));
   			}
   
-  			var http = require('http');
+  			var https = require('https');
   
-  			http.get(url, function (res) {
+  			https.get(url, function (res) {
   				var buf = [];
   
   				res.on('data', function (data) {
